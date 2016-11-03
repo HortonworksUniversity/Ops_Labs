@@ -1,6 +1,6 @@
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "xxCloudFormation template to Deploy Hortonworks Data Platform on VPC with a public subnet",
+    "Description": "CloudFormation template to Deploy Hortonworks Data Platform on VPC with a public subnet",
     "Mappings": {
         "AMAZONLINUX2015": {
             "eu-west-1": {
