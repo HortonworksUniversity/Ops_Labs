@@ -1,6 +1,12 @@
 {
   "blueprint" : "testblueprint1",
   "default_password" : "BadPass#1",
+  "configurations" : [
+    { "ams-grafana-env" : {
+      "metrics_grafana_password" : "BadPass@1"
+      }
+    }
+  ],
   "host_groups" :[
     { "name" : "host_group_1",
       "hosts" :[ { "fqdn" : "node1"} ]
