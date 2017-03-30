@@ -57,7 +57,7 @@ AD_SERVER_NAME=''
 if [[ "$ADD_AD_SERVER" == "true" ]] ; then
    echo "   Creating Win-AD Instance"
    echo ""
-   ADInstance=`aws ec2 run-instances --image-id $AMI --subnet-id $SUBNET --key-name training-keypair --instance-type m3.xlarge --count 1 | grep 'InstanceId' | awk -F':' '{print $2}' | sed 's|[ "]||g' | sed 's/,//'`
+   ADInstance=`aws ec2 run-instances --image-id $AMI --subnet-id $SUBNET --security-group-ids $SEC_GROUP --key-name training-keypair --instance-type m3.xlarge --count 1 | grep 'InstanceId' | awk -F':' '{print $2}' | sed 's|[ "]||g' | sed 's/,//'`
    AD_SERVER_NAME=$TRAINING_NAME"-WIN-AD-SERVER"
    aws ec2 create-tags --resources $ADInstance --tags Key=Name,Value=$AD_SERVER_NAME
 fi
