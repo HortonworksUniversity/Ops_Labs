@@ -1908,9 +1908,6 @@
           "name" : "PIG"
         },
         {
-          "name" : "HST_AGENT"
-        },
-        {
           "name" : "MAPREDUCE2_CLIENT"
         },
         {
@@ -1981,9 +1978,6 @@
           "name" : "WEBHCAT_SERVER"
         },
         {
-          "name" : "HST_AGENT"
-        },
-        {
           "name" : "MAPREDUCE2_CLIENT"
         },
         {
@@ -2042,9 +2036,6 @@
           "name" : "PIG"
         },
         {
-          "name" : "HST_AGENT"
-        },
-        {
           "name" : "MAPREDUCE2_CLIENT"
         },
         {
@@ -2076,9 +2067,6 @@
           "name" : "ZKFC"
         },
         {
-          "name" : "HST_SERVER"
-        },
-        {
           "name" : "METRICS_MONITOR"
         },
         {
@@ -2098,15 +2086,6 @@
         },
         {
           "name" : "PIG"
-        },
-        {
-          "name" : "ACTIVITY_ANALYZER"
-        },
-        {
-          "name" : "ACTIVITY_EXPLORER"
-        },
-        {
-          "name" : "HST_AGENT"
         },
         {
           "name" : "MAPREDUCE2_CLIENT"
@@ -2166,10 +2145,6 @@
         },
         {
           "recovery_enabled" : "true",
-          "name" : "SMARTSENSE"
-        },
-        {
-          "recovery_enabled" : "true",
           "name" : "YARN"
         },
         {
@@ -2223,10 +2198,6 @@
         {
           "recovery_enabled" : "true",
           "name" : "PIG"
-        },
-        {
-          "recovery_enabled" : "true",
-          "name" : "HST_SERVER"
         },
         {
           "recovery_enabled" : "true",
