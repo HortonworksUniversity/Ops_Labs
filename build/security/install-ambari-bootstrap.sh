@@ -9,6 +9,8 @@
 
 sudo yum -y -q install git
 
+sudo yum update -y -q nss curl
+
 sudo git clone -b 1.1.0 https://github.com/HortonworksUniversity/Ops_Labs /opt/ambari-bootstrap
 cd /opt/ambari-bootstrap
 sudo git filter-branch --prune-empty --subdirectory-filter build/security/ambari-bootstrap-master
