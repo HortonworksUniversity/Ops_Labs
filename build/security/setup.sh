@@ -21,7 +21,7 @@ case ${el_version} in
   ;;
 esac
 
-curl -sSL https://raw.githubusercontent.com/HortonworksUniversity/Ops_Labs/1.1.0/build/security/install-ambari-bootstrap.sh | bash
+curl -sSL --tlsv1.2 https://raw.githubusercontent.com/HortonworksUniversity/Ops_Labs/1.1.0/build/security/install-ambari-bootstrap.sh | bash
 
 ~/ambari-bootstrap/extras/deploy/prep-hosts.sh
 
