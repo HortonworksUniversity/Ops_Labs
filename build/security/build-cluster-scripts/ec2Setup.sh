@@ -33,14 +33,17 @@ export lab_batch=$NO_OF_ADDTL_NODES
 export cfn_parameters='
 [
 {"ParameterKey":"KeyName","ParameterValue":"training-keypair"},
-{"ParameterKey":"AmbariServices","ParameterValue":"HDFS MAPREDUCE2 PIG YARN HIVE HBASE TEZ AMBARI_METRICS AMBARI_INFRA SLIDER ZOOKEEPER"},
-{"ParameterKey":"HDPStack","ParameterValue":"2.5"},
+{"ParameterKey":"AmbariServices","ParameterValue":"HDFS MAPREDUCE2 PIG YARN HIVE HBASE TEZ AMBARI_INFRA SLIDER ZOOKEEPER"},
+{"ParameterKey":"HDPStack","ParameterValue":"2.6"},
+{"ParameterKey":"AmbariVersion","ParameterValue":"2.5.2.0"},
 {"ParameterKey":"AdditionalInstanceCount","ParameterValue":"'$NO_OF_ADDTL_NODES'"},
 {"ParameterKey":"SubnetId","ParameterValue":"'$SUBNET'"},
 {"ParameterKey":"SecurityGroups","ParameterValue":"'$SEC_GROUP'"},
-{"ParameterKey":"InstanceType","ParameterValue":"'$INSTANCE_TYPE'"}
+{"ParameterKey":"InstanceType","ParameterValue":"'$INSTANCE_TYPE'"},
+{"ParameterKey":"DeployCluster","ParameterValue":"true"}
 ]
 '
+
 #echo $cfn_parameters
 
 # 1.4 cloudformation switches -- use next line to disable ROLLBACK (CloudFormation's auto-delete on error)
