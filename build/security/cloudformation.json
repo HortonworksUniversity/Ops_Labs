@@ -183,7 +183,7 @@
             "Type": "AWS::EC2::KeyPair::KeyName"
         },
         "PostCommand": {
-            "Default": "curl -sSL https://raw.githubusercontent.com/HortonworksUniversity/Ops_Labs/1.1.0/build/security/setup.sh | bash",
+            "Default": "curl -sSL --tlsv1.2 https://raw.githubusercontent.com/HortonworksUniversity/Ops_Labs/1.1.0/build/security/setup.sh | bash",
             "Description": "Command to run during after nodes are deployed",
             "Type": "String"
         },
